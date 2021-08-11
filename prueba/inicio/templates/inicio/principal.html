@@ -1,0 +1,49 @@
+{% extends "inicio/encabezado.html" %}
+
+{% block titulo %} Principal {% endblock %}
+
+{% block imagen%}
+	{%load static%}
+	{%static 'inicio/images/home.png'%}
+{% endblock%}
+
+{%block pageName%}Principal{%endblock%}
+
+{% block contenido%}
+		<!--Encabezdo -->
+		<div class="page-header">
+			<div class="page-title">
+				<h3>Alumnos
+					<small>Lista de Alumnos 9A</small>
+				</h3>
+			</div>
+		</div>
+		<!-- /Encabezado-->
+{%endblock%}
+
+{% block contenido2%}
+		<!--Tabla alumnos-->
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Foto</th>
+					<th>Matricula</th>
+					<th>Nombre</th>
+					<th>Carrera</th>
+					<th>Turno</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="text-center">
+						<img src="" alt="" class="img-media">
+					</td>
+					<td class="text-semibold">UTM180005TI</td>
+					<td class="muted">Paco</td>
+					<td class="muted">TI</td>
+					<td class="muted">Vespertino</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--End tabla alumnos-->
+{%endblock%}
